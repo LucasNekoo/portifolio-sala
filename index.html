@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Portfólio da Turma 125 do Transforme-se — ideias, projetos, jornada, bastidores e equipe.">
+<meta name="theme-color" content="#101211">
+<title>Turma 125 — Ideias ganham forma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#inicio" aria-label="Turma 125 — início">
+    <span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+  </a>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">☰</button>
+  <nav id="nav" aria-label="Navegação principal">
+    <a href="#inicio">Início</a>
+    <a href="#quem-somos">Quem Somos</a>
+    <a href="#jornada">Nossa Jornada</a>
+    <a href="#mestra">Nossa Mestra</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#equipes">Equipe</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="inicio">
+  <img src="images/equipe/WhatsApp Image 2026-09-16 at 20.32.35.jpeg" alt="Turma 125 reunida no laboratório de informática">
+  <div class="hero-shade"></div>
+  <div class="hero-content reveal">
+    <p class="eyebrow">TRANSFORME-SE · SENAC × SERASA</p>
+    <h1><span>Ideias</span> <em>ganham</em> <span>forma.</span></h1>
+    <p>Um portfólio vivo da Turma 125: projetos, experiências, aprendizados e tudo aquilo que construímos durante nossa jornada.</p>
+  </div>
+  <div class="scroll" aria-hidden="true">SCROLL ↓</div>
+</section>
+
+<section class="dark about" id="quem-somos">
+  <div class="wrap about-grid">
+    <div class="about-img reveal"><img src="images/equipe/equipe.jpeg" alt="Foto da Turma 125"></div>
+    <div class="reveal">
+      <p class="eyebrow">02 / QUEM SOMOS</p>
+      <h2>Uma turma.<br><em>Várias ideias.</em></h2>
+      <p>Somos a Turma 125 do Transforme-se, formação em desenvolvimento front-end fruto de uma parceria entre o Senac e o Serasa.</p>
+      <p>Este portfólio reúne nossos projetos, aprendizados, experiências e momentos construídos durante essa jornada.</p>
+      <button class="pill accent" id="galleryToggle" aria-expanded="false" aria-controls="galleryPanel">Por trás das câmeras ↘</button>
+    </div>
+  </div>
+
+  <div class="wrap gallery-panel" id="galleryPanel" hidden>
+    <div class="gallery-head">
+      <div><p class="eyebrow">BASTIDORES</p><h3>Por trás das <em>cenas.</em></h3></div>
+      <button class="audio" id="audio" aria-pressed="false">🔊 Áudio descrição</button>
+    </div>
+    <p id="audioText">Galeria de bastidores da Turma 125 com fotografias e vídeos de momentos de aprendizagem, trabalho em equipe, apresentações e convivência.</p>
+    <div class="gallery" id="gallery" aria-label="Galeria de bastidores"></div>
+  </div>
+</section>
+
+<section class="paper journey" id="jornada">
+  <div class="wrap">
+    <div class="heading reveal">
+      <p class="eyebrow">03 / NOSSA JORNADA</p>
+      <h2>Por onde<br><em>passamos.</em></h2>
+    </div>
+    <div id="timeline"></div>
+  </div>
+</section>
+
+<section class="dark teacher" id="mestra">
+  <div class="wrap teacher-grid">
+    <div class="teacher-img reveal">
+      <img src="assets/page7_img2.png" alt="Professora Anicely Santos">
+      <span>NOSSA MESTRA / 2026</span>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">04 / NOSSA MESTRA</p>
+      <h2>Professora<br><em>Anicely</em></h2>
+      <p>E, ao falar da nossa trajetória, existe uma pessoa que se tornou parte essencial dela: <strong>a professora Anicely</strong>.</p>
+      <p>Ela nos incentivava a questionar, pensar, criar, experimentar e, principalmente, encontrar nossas próprias respostas.</p>
+      <div class="external-links"><a class="external" href="https://anicelysantos.github.io/" target="_blank" rel="noopener noreferrer">Portfólio ↗</a><a class="external" href="https://www.linkedin.com/in/anicelysantos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn da professora Anicely">LinkedIn ↗</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="paper projects" id="projetos">
+  <div class="wrap">
+    <div class="heading split reveal">
+      <div>
+        <p class="eyebrow">05 / PROJETOS</p>
+        <h2>O que<br><em>criamos.</em></h2>
+      </div>
+      <p>Projetos, MVPs e jogos desenvolvidos ao longo da formação.</p>
+    </div>
+    <div class="filters" aria-label="Filtrar projetos">
+      <button class="filter active" data-filter="todos">Todos</button>
+      <button class="filter" data-filter="mvp">MVPs</button>
+      <button class="filter" data-filter="jogo">Jogos</button>
+    </div>
+    <div class="project-grid" id="projects"></div>
+  </div>
+</section>
+
+<section class="dark team" id="equipes">
+  <div class="wrap">
+    <div class="heading split reveal">
+      <div>
+        <p class="eyebrow">06 / EQUIPE</p>
+        <h2>Quem está<br><em>por trás.</em></h2>
+      </div>
+      <p>Conheça as pessoas que transformam ideias em resultados.</p>
+    </div>
+    <div class="team-grid" id="team"></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-brand" aria-label="Turma 125">
+    <span class="brand-icon footer-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="footer-brand-name">Turma <strong>125</strong></span>
+  </div>
+  <div class="footer-bottom"><span>TRANSFORME-SE · SENAC × SERASA</span><a href="#inicio">voltar ao topo ↑</a></div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Galeria de bastidores">
+  <button id="lbClose" class="lb-close" aria-label="Fechar">×</button>
+  <button id="lbPrev" class="lb-nav prev" aria-label="Anterior">←</button>
+  <div class="lb-content">
+    <div id="lbCounter"></div>
+    <img id="lbImg" alt="">
+    <video id="lbVideo" controls playsinline preload="metadata"></video>
+    <p id="lbCaption"></p>
+  </div>
+  <button id="lbNext" class="lb-nav next" aria-label="Próximo">→</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
