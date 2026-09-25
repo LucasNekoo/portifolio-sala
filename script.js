@@ -3,33 +3,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const $$ = (s) => [...document.querySelectorAll(s)];
 
   const team = [
+    {name:"Aira Soares",image:"images/equipe_dev/aira_soares.jpeg",github:"https://github.com/Airassilva",linkedin:"https://www.linkedin.com/in/aira-soares/",portfolio:"https://airassilva.github.io/Portifolio/"},
+    {name:"Alan Ferreira",image:"images/equipe_qa/Alan_Ferreira.jpeg",github:"https://github.com/alankauanferreira6-bot",linkedin:"",portfolio:""},
+    {name:"Beatriz Coutinho",image:"images/equipe_design/beatriz.jpeg",github:"https://github.com/beatriz123d",linkedin:"https://www.linkedin.com/in/beatriz-coutinho-2a0b60425/",portfolio:""},
+    {name:"Carlos Eduardo",image:"images/equipe_dev/carlos_eduardo.jpeg",github:"https://github.com/carlaum167",linkedin:"https://www.linkedin.com/in/carlos-eduardo-cd/",portfolio:"https://carlaum167.github.io/portfolio/"},
     {name:"Carlos Henrique",image:"images/equipe_dev/carlos_henrique.jpeg",github:"https://github.com/carloshsv0411",linkedin:"https://www.linkedin.com/in/carloshenrique0411/",portfolio:""},
-    {name:"Aira Soares",image:"images/equipe_dev/aira_soares.jpeg",github:"https://github.com/Airassilva",linkedin:"",portfolio:""},
-    {name:"Carlos Eduardo",image:"images/equipe_dev/carlos_eduardo.jpeg",github:"https://github.com/carlaum167",portfolio:""},
-    {name:"George Lucas",image:"images/equipe_dev/george_lucas.jpeg",github:"https://github.com/LucasNekoo",portfolio:""},
-    {name:"Elcio José",image:"images/equipe_dev/elcio_jose.jpeg",github:"https://github.com/oElcio",portfolio:""},
-    {name:"João Lucas Silva",image:"images/equipe_dev/joao_lucas_silva.jpeg",github:"https://github.com/Draculablack420",portfolio:""},
-    {name:"Pedro Phelipe",image:"images/equipe_dev/pedro_phelipe.jpeg",github:"https://github.com/Segundoxs",portfolio:""},
+    {name:"Cauã Abraão",image:"images/equipe_qa/Cauã_Abraão.jpeg",github:"https://github.com/ocauandev",linkedin:"",portfolio:""},
+    {name:"Dennys Ricardo",image:"images/equipe_doc/dennys_ricardo.jpeg",github:"https://github.com/DennysRicardo007",linkedin:"https://www.linkedin.com/in/dennys-ricardo-55a051393/",portfolio:"https://meuportifolio157.netlify.app/"},
+    {name:"Eduardo Vieira",image:"images/equipe_dev/eduardo_vieira.jpg",github:"https://github.com/EduardoVieira-tec",linkedin:"https://www.linkedin.com/in/eduardo-vieira-737712400/",portfolio:"https://eduardovieira-tec.github.io/"},
+    {name:"Elcio José",image:"images/equipe_dev/elcio_jose.jpeg",github:"https://github.com/oElcio",linkedin:"",portfolio:""},
+    {name:"Gabriel Felipe",image:"images/equipe_qa/gabriel_felipe.jpeg",github:"https://github.com/gabrielfelipe480-Neos",linkedin:"",portfolio:""},
+    {name:"George Lucas",image:"images/equipe_dev/george_lucas.jpeg",github:"https://github.com/LucasNekoo",linkedin:"https://www.linkedin.com/in/georgelucasluz/",portfolio:"https://lucasnekoo.github.io/meu-portifolio/"},
+    {name:"Heloisa Vieira",image:"images/equipe_qa/heloisa_vieira.jpeg",github:"https://github.com/mheloisa1",linkedin:"https://www.linkedin.com/in/maria-heloisa-5546b7261/",portfolio:""},
     {name:"Jéssica Silva",image:"images/equipe_design/jessica_silva.jpeg",github:"https://github.com/js6462143-byte",linkedin:"https://www.linkedin.com/in/jéssica-silva-4093a1214?utm_source=share_via&utm_content=profile&utm_medium=member_ios",portfolio:""},
-    {name:"Luísa Melo",image:"images/equipe_design/luisa_melo.jpeg",github:"https://github.com/luisamelo0",portfolio:""},
-    {name:"Luiz Miranda",image:"images/equipe_design/luiz_miranda.jpeg",github:"https://github.com/luizlmorim",linkedin:"https://www.linkedin.com/in/luiz-miranda-236831202/",portfolio:""},
-    {name:"Maria Regina",image:"images/equipe_design/maria_regina.jpeg",github:"https://github.com/Mariareginaalvesdasilva",portfolio:""},
-    {name:"Pedro Santos",image:"images/equipe_design/pedro_santos.jpeg",github:"https://github.com/PedroSantos28",portfolio:""},
-    {name:"Dennys Ricardo",image:"images/equipe_doc/dennys_ricardo.jpeg",github:"https://github.com/DennysRicardo007",linkedin:"https://www.linkedin.com/in/dennys-ricardo-55a051393?utm_source=share_via&utm_content=profile&utm_medium=member_android",portfolio:""},
-    {name:"João Pedro",image:"images/equipe_doc/joao_pedro_soares.jpeg",github:"https://github.com/jpsoaress99",portfolio:""},
+    {name:"João Lucas Silva",image:"images/equipe_dev/joao_lucas_silva.jpeg",github:"https://github.com/Draculablack420",linkedin:"",portfolio:""},
+    {name:"João Pedro",image:"images/equipe_doc/joao_pedro_soares.jpeg",github:"https://github.com/jpsoaress99",linkedin:"https://www.linkedin.com/in/jpsoaress99/",portfolio:"https://jo-o-pedro-tau.vercel.app"},
     {name:"Kauã Fernandes",image:"images/equipe_doc/kauã_fernandes.jpeg",github:"https://github.com/kauafernandecrtv-droid",linkedin:"https://www.linkedin.com/in/kauafernandess",portfolio:""},
+    {name:"Laura Sofia",image:"images/equipe_qa/laura_sofia.jpeg",github:"https://github.com/laura0xss",linkedin:"",portfolio:""},
+    {name:"Luísa Melo",image:"images/equipe_design/luisa_melo.jpeg",github:"https://github.com/luisamelo0",linkedin:"",portfolio:""},
+    {name:"Luiz Miranda",image:"images/equipe_design/luiz_miranda.jpeg",github:"https://github.com/luizlmorim",linkedin:"https://www.linkedin.com/in/luiz-miranda-236831202/",portfolio:""},
     {name:"Maria Eduarda",image:"images/equipe_doc/maria_eduarda_ferreira.jpeg",github:"https://github.com/mariaeduardaferreiradon-afk",linkedin:"https://www.linkedin.com/in/eduardafnascimento?utm_source=share_via&utm_content=profile&utm_medium=member_android",portfolio:""},
-    {name:"Ramon de Oliveira",image:"images/equipe_doc/ramon_de_oliveira.jpeg",github:"https://github.com/raq0215",portfolio:""},
-    {name:"Gabriel Felipe",image:"images/equipe_qa/gabriel_felipe.jpeg",github:"https://github.com/gabrielfelipe480-Neos",portfolio:""},
-    {name:"Heloisa Vieira",image:"images/equipe_qa/heloisa_vieira.jpeg",github:"https://github.com/mheloisa1",portfolio:""},
-    {name:"Laura Sofia",image:"images/equipe_qa/laura_sofia.jpeg",github:"https://github.com/laura0xss",portfolio:""},
-    {name:"Raquel Moreira",image:"images/equipe_qa/raquel_moreira.jpeg",github:"https://github.com/raq0215",portfolio:""},
-    {name:"Eduardo Vieira",image:"images/equipe_dev/eduardo_vieira.jpg",github:"https://github.com/EduardoVieira-tec",portfolio:""},
-    {name:"Raimundo Anthoni",image:"images/equipe_dev/Anthoni.jpeg",github:"https://github.com/anthonicruz",portfolio:""},
-    {name:"Cauã Abraão",image:"images/equipe_qa/Cauã_Abraão.jpeg",github:"https://github.com/ocauandev",portfolio:""},
-    {name:"Pedro Martinis",image:"images/equipe_design/Martins.jpeg",github:"https://github.com/Martinis001",portfolio:""},
-    {name:"Alan Ferreira",image:"images/equipe_qa/Alan_Ferreira.jpeg",github:"https://github.com/alankauanferreira6-bot",portfolio:""},
-    {name:"Beatriz Coutinho",image:"images/equipe_design/beatriz.jpeg",github:"https://github.com/beatriz123d",linkedin:"https://www.linkedin.com/in/beatriz-coutinho-2a0b60425/",portfolio:""}
+    {name:"Maria Regina",image:"images/equipe_design/maria_regina.jpeg",github:"https://github.com/Mariareginaalvesdasilva",linkedin:"",portfolio:""},
+    {name:"Pedro Martinis",image:"images/equipe_design/Martins.jpeg",github:"https://github.com/Martinis001",linkedin:"",portfolio:""},
+    {name:"Pedro Phelipe",image:"images/equipe_dev/pedro_phelipe.jpeg",github:"https://github.com/Segundoxs",linkedin:"https://www.linkedin.com/in/pedro-philipe-48b86425/",portfolio:""},
+    {name:"Pedro Santos",image:"images/equipe_design/pedro_santos.jpeg",github:"https://github.com/PedroSantos28",linkedin:"",portfolio:""},
+    {name:"Raimundo Anthoni",image:"images/equipe_dev/Anthoni.jpeg",github:"https://github.com/anthonicruz",linkedin:"",portfolio:""},
+    {name:"Ramon de Oliveira",image:"images/equipe_doc/ramon_de_oliveira.jpeg",github:"https://github.com/raq0215",linkedin:"https://www.linkedin.com/in/ramon-oliveira-94b22b2b4/",portfolio:"https://ramondeoliveira.vercel.app/"},
+    {name:"Raquel Moreira",image:"images/equipe_qa/raquel_moreira.jpeg",github:"https://github.com/raq0215",linkedin:"https://www.linkedin.com/in/raquel-moreira-da-silva-997b06261/",portfolio:"https://raq0215portifoliopessoal.vercel.app/"}
   ];
 
   // A ordem foi organizada por narrativa: turma/apresentação → trabalho → descontração → vídeos.
@@ -52,9 +52,12 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   const projects = [
+    {name:"Anime List",type:["mvp"],image:"images/projetos/anime-list.png",github:"https://github.com/LucasNekoo/anime-list",demo:"https://lucasnekoo.github.io/anime-list/",desc:"Lista de animes desenvolvida para organizar e explorar títulos de forma simples e interativa.",embed:true},
     {name:"Bingo JS",type:["mvp","jogo"],image:"images/projetos/bingo.jpg",github:"https://github.com/carlaum167/Bingo_Transforme-se",demo:"",desc:"Projeto desenvolvido em JavaScript, utilizando lógica de programação e interação com o usuário."},
-    {name:"MOCAU",type:["mvp"],image:"images/projetos/mocau.jpg",github:"https://github.com/DennysRicardo007/UC-4",demo:"",desc:"Projeto desenvolvido pela turma durante nossa jornada de aprendizagem."},
-    {name:"Roleta Infinita",type:["jogo"],image:"images/projetos/roleta-icon.svg",github:"https://github.com/LucasNekoo/roleta-infinita",demo:"https://lucasnekoo.github.io/roleta-infinita/",desc:"Jogo web desenvolvido em HTML, CSS e JavaScript, com categorias e uma dinâmica de roleta interativa."}
+    {name:"Joguinho",type:["jogo"],image:"images/projetos/joguinho.png",github:"https://github.com/Airassilva/Joguinho",demo:"https://airassilva.github.io/Joguinho/",desc:"Jogo web desenvolvido durante a formação, com foco em interação e diversão.",embed:true},
+    {name:"MOCAU",type:["mvp"],image:"images/projetos/mocau.jpg",github:"https://github.com/DennysRicardo007/UC-4",demo:"https://www.mocau.com.br/",desc:"Projeto desenvolvido pela turma durante nossa jornada de aprendizagem.",embed:true},
+    {name:"Roleta Infinita",type:["jogo"],image:"images/projetos/roleta-icon.svg",github:"https://github.com/LucasNekoo/roleta-infinita",demo:"https://lucasnekoo.github.io/roleta-infinita/",desc:"Jogo web desenvolvido em HTML, CSS e JavaScript, com categorias e uma dinâmica de roleta interativa.",embed:true},
+    {name:"yeNews",type:["mvp"],image:"images/projetos/yenews.png",github:"https://github.com/Airassilva/yeNews",demo:"https://airassilva.github.io/yeNews/",desc:"Projeto web desenvolvido durante a formação, reunindo conteúdo em uma interface própria.",embed:true}
   ];
 
   const timeline = [
@@ -199,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <p>${escapeHtml(project.desc)}</p>
             <div class="project-links">
               <a href="${project.github}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub ↗</a>
-              ${project.demo ? `<a href="${project.demo}" target="_blank" rel="noopener noreferrer">Jogar agora ↗</a>` : ""}
+              ${project.demo ? (project.embed ? `<button type="button" class="project-demo-btn" data-embed="${project.demo}">Acessar aqui ↗</button>` : `<a href="${project.demo}" target="_blank" rel="noopener noreferrer">Acessar ↗</a>`) : ""}
             </div>
           </div>`;
         projectsEl.appendChild(el);
@@ -327,5 +330,36 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.key === "Escape") closeLightbox();
     if (event.key === "ArrowLeft") show(current - 1);
     if (event.key === "ArrowRight") show(current + 1);
+  });
+
+  // Abre a Roleta Infinita dentro do próprio portfólio usando iframe.
+  const embedModal = document.createElement("div");
+  embedModal.className = "embed-modal";
+  embedModal.setAttribute("aria-hidden", "true");
+  embedModal.innerHTML = `
+    <div class="embed-backdrop" data-close-embed></div>
+    <div class="embed-dialog" role="dialog" aria-modal="true" aria-label="Projeto incorporado">
+      <div class="embed-head"><strong class="embed-title">Projeto</strong><div class="embed-head-actions"><a class="embed-external" href="#" target="_blank" rel="noopener noreferrer">Abrir em nova aba ↗</a><button type="button" class="embed-close" data-close-embed aria-label="Fechar">×</button></div></div>
+      <iframe title="Projeto incorporado" src="about:blank" loading="lazy" allow="fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="embed-note">A prévia abre aqui. Se o site não permitir incorporação, use “Abrir em nova aba”.</p>
+    </div>`;
+  document.body.appendChild(embedModal);
+  const embedFrame = embedModal.querySelector("iframe");
+  const embedTitle = embedModal.querySelector(".embed-title");
+  const embedExternal = embedModal.querySelector(".embed-external");
+  const closeEmbed = () => { embedModal.classList.remove("open"); embedModal.setAttribute("aria-hidden", "true"); embedFrame.src = "about:blank"; embedExternal.href = "#"; document.body.style.overflow = ""; };
+  embedModal.addEventListener("click", (e) => { if (e.target.closest("[data-close-embed]")) closeEmbed(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && embedModal.classList.contains("open")) closeEmbed(); });
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".project-demo-btn");
+    if (!btn) return;
+    const projectCard = btn.closest(".project");
+    const projectName = projectCard?.querySelector("h3")?.textContent?.replace(/\.$/, "") || "Projeto";
+    embedTitle.textContent = projectName;
+    embedExternal.href = btn.dataset.embed;
+    embedFrame.title = projectName;
+    embedFrame.src = btn.dataset.embed;
+    embedModal.classList.add("open");
+    embedModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
   });
 });
