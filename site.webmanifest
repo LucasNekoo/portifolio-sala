@@ -1,0 +1,14 @@
+{
+  "name": "Portfólio — Turma 125",
+  "short_name": "Turma 125",
+  "description": "Portfólio da Turma 125 do Transforme-se.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101211",
+  "theme_color": "#101211",
+  "icons": [
+    {"src":"images/favicon/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},
+    {"src":"images/favicon/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}
+  ]
+}

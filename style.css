@@ -7,8 +7,10 @@ body.lock{overflow:hidden}
 .skip:focus{top:10px}
 a,button{font:inherit}button{cursor:pointer}
 .topbar{height:82px;position:fixed;z-index:1000;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:0 3.2vw;background:rgba(16,18,17,.86);backdrop-filter:blur(16px);border-bottom:1px solid #ffffff14}
-.brand{width:38px;height:38px;display:grid;place-items:center;text-decoration:none}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
 .brand-icon{width:31px;height:31px;display:grid;grid-template-columns:repeat(3,1fr);gap:3px;align-items:end;transform:skew(-12deg)}
+.brand-label{color:#fff;font:600 12px var(--display);letter-spacing:.08em;white-space:nowrap}.brand-label strong{color:var(--lime)}
+
 .brand-icon i{display:block;background:#fff;border-radius:2px;box-shadow:0 0 0 1px #ffffff0a}
 .brand-icon i:nth-child(1){height:55%;opacity:.9}.brand-icon i:nth-child(2){height:82%;opacity:.75}.brand-icon i:nth-child(3){height:100%;background:var(--lime)}
 nav{display:flex;align-items:center;gap:22px}
@@ -139,3 +141,9 @@ nav a{font-size:12px}
 .timeline-trigger:focus-visible{outline:2px solid #b94c68;outline-offset:4px}
 .project-credit{font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:#111;opacity:.58;margin:-3px 0 14px;font-weight:700}
 @media(max-width:700px){.timeline-trigger{grid-template-columns:58px 1fr 28px;gap:12px;padding:20px 0}.timeline-num{font-size:34px}.timeline-main h3{font-size:21px}.timeline-main p{font-size:12px}.timeline-detail p{padding-left:70px;padding-right:25px;font-size:13px;line-height:1.65}.timeline-item[aria-expanded="true"] .timeline-detail p{padding-bottom:22px}}
+
+/* Identidade do cabeçalho — Turma 125 */
+.brand{width:auto;min-width:170px;gap:10px;display:flex;align-items:center}
+.brand-label{display:inline-flex;align-items:baseline;gap:7px;color:#ffffffc7;font:600 11px var(--display);letter-spacing:.08em;white-space:nowrap}
+.brand-label strong{color:var(--lime);font:800 15px var(--mono);letter-spacing:-.03em}
+@media(max-width:800px){.brand{min-width:auto}.brand-label{font-size:10px}.brand-label strong{font-size:13px}}
